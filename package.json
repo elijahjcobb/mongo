@@ -1,0 +1,47 @@
+{
+	"name": "@elijahjcobb/mongo",
+	"version": "0.1.0",
+	"description": "A package to handle a connection with a MongoDB that is type safe using components similar to React.",
+	"keywords": [
+		"mongodb",
+		"typescript",
+		"props",
+		"react",
+		"create",
+		"query",
+		"update",
+		"delete"
+	],
+	"main": "js/index",
+	"types": "dts",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepublishOnly": "npm run compile",
+		"compile": "npm run clean && /usr/local/bin/tsc -p tsconfig.json",
+		"watch": "tsc -w -p .",
+		"clean": "rm -rf js && rm -rf dts",
+		"start": "node js/index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/elijahjcobb/mongo.git"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"author": "Elijah Cobb <elijah@elijahcobb.com> (https://elijahcobb.com/)",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/elijahjcobb/mongo/issues"
+	},
+	"homepage": "https://github.com/elijahjcobb/mongo#readme",
+	"dependencies": {
+		"mongodb": "latest"
+	},
+	"devDependencies": {
+		"@types/node": "latest",
+		"typescript": "latest",
+		"tslint": "latest",
+		"@types/mongodb": "latest"
+	}
+}
